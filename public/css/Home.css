@@ -1,0 +1,155 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Styles de base */
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+	background-color: #f7f7f7;
+}
+
+a {
+	color: #0077cc;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+ul {
+	list-style: none;
+}
+
+/* Styles de l'en-tête */
+
+header {
+	background-color: #fff;
+	padding: 10px 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav .logo {
+	font-size: 28px;
+	font-weight: bold;
+	color: #0077cc;
+}
+
+nav ul {
+	display: flex;
+}
+
+nav li {
+	margin-left: 20px;
+}
+
+nav li:first-child {
+	margin-left: 0;
+}
+
+nav a {
+	padding: 10px;
+}
+
+nav a:hover {
+	background-color: #0077cc;
+	color: #fff;
+}
+
+/* Styles de la section Hero */
+
+.hero {
+	background-color: #0077cc;
+	color: #fff;
+	padding: 60px 20px;
+	text-align: center;
+}
+
+.hero h1 {
+	font-size: 36px;
+	margin-bottom: 20px;
+}
+
+.hero p {
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+
+.btn1 {
+	display: inline-block;
+	background-color: #fff;
+	color: #0077cc;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background-color 0.2s ease;
+}
+
+.btn1:hover {
+	background-color: #0077cc;
+	color: #fff;
+}
+
+/* Styles de la section Offres d'emploi */
+
+.job-listings {
+	padding: 60px 20px;
+}
+
+.job-listings h2 {
+	font-size: 24px;
+	margin-bottom: 30px;
+}
+
+.job-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.job {
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+	box-shadow: 0 0  30px rgba(0, 0, 0, 0.1);
+	border-radius: 50px;
+	overflow: hidden;
+	
+}
+
+.job-image {
+	height: 200px;
+	background-size: cover;
+	background-position: center;
+}
+
+.job-details {
+	flex: 1;
+	padding: 20px;
+}
+
+.job-details h3 {
+	font-size: 24px;
+	margin-bottom: 10px;
+}
+
+.job-details p {
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.job-details .btn1 {
+	margin-top: auto;
+}
+

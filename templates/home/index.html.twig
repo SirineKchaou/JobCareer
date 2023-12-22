@@ -1,0 +1,48 @@
+{% extends 'index.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+		<section >
+		<div class="carousel">
+  <div class="carousel-container">
+    <img src="image/carousel1.jpg" alt="Image 1">
+    <img src="image/carousel2.jpg" alt="Image 2">
+    <img src="image/carousel3.jpg" alt="Image 3">
+    <img src="image/carousel4.jpg" alt="Image 4">
+	 <img src="image/carousel5.jpg" alt="Image 5">
+	  <img src="image/carousel6.jpeg" alt="Image 6">
+	   <img src="image/carousel7.jpg" alt="Image 7">
+	
+  </div>
+  <button class="carousel-prev">Précédent</button>
+  <button class="carousel-next">Suivant</button>
+</div>
+
+
+<script type="text/javascript" src="{{ asset('js/carousel.js') }}"></script>			
+		</section>
+<main class="main">
+
+		
+		<section class="job-listings">
+			<h2>Offres d'emploi récentes</h2>
+			{% for offre in offres %}
+			<ul class="job-list">
+			<table><tr><td>
+				<li class="job">
+					<div class="job-image">  <img src="{{ asset('uploads/photos/') ~ offre.photo }}"  alt="Offre d'emploi 1"></div>
+					<div class="job-details">
+						<h3>{{ offre.nom }}</h3>
+						<p>{{ offre.description }}</p>
+						<a href="{{path('app_contact')}}" class="btn">Postuler maintenant</a>
+					</div>
+				</li></td>
+			</ul>
+			</tr>
+			</table>
+			{% endfor %}
+		</section>
+	</main>
+
+{% endblock %}

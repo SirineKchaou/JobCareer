@@ -1,0 +1,12 @@
+.about {
+	margin: 50px;
+}
+
+.about h1 {
+	font-size: 32px;
+}
+
+.about p {
+	font-size: 18px;
+	line-height: 1.5;
+}

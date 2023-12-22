@@ -1,0 +1,64 @@
+{% extends 'index.html.twig' %}
+
+{% block title %}Hello Contact2Controller!{% endblock %}
+
+{% block body %}
+<section class="contact-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mb-3 mb-md-0">
+        <h2 class="section-heading">Contactez-nous</h2>
+
+
+
+        <form class="contact-form" action="{{ path("app_contact2") }}" method="POST" >
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="Nom" name="name" required>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input class="form-control" type="email" placeholder="Email" name="email" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" placeholder="Message" rows="5" name="message" required></textarea>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-primary btn-lg" type="submit">Envoyer</button>
+
+{%for message in app.flashes('success')%}
+<div class="text-success">
+
+{{message}}
+</div>
+{% endfor %}
+
+
+{%for message in app.flashes('error')%}
+<div class="text-error">
+{{message}}
+</div>
+{% endfor %}
+
+
+
+          </div>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <div class="contact-info">
+          <h2 class="section-heading">Informations de contact</h2>
+          <p class="mb-3"><i class="fas fa-map-marker-alt"></i> 123 Rue de la technopole, tunis</p>
+          <p class="mb-3"><i class="fas fa-phone"></i> +33 6 12 34 56 78</p>
+          <p class="mb-3"><i class="fas fa-envelope"></i> contact@wevioo.com</p>
+          <p><i class="fas fa-clock"></i> Du lundi au vendredi, de 9h à 17h</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

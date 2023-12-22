@@ -1,0 +1,27 @@
+{% extends 'index.html.twig' %}
+
+{% block title %}Hello ServiceController!{% endblock %}
+
+{% block body %}
+<body>
+	<div class="services">
+		<h1>Nos services</h1>
+        <table><tr><td>
+		<div class="service">
+			<img src="image/webdesigne.avif" alt="Web Design">
+			<h2>Conception Web</h2>
+			<p>Nous concevons des sites web modernes et professionnels qui correspondent à votre image de marque et qui répondent aux besoins de vos clients.</p>
+		</div><td/><td>
+		<div class="service">
+			<img src="image/devloppement.jpg" alt="Development">
+			<h2>Développement</h2>
+			<p>Nous développons des applications web sur mesure qui répondent à vos besoins et qui fonctionnent parfaitement sur tous les appareils.</p>
+		</div></td></tr><tr><td>
+		<div class="service">
+			<img src="image/hosting.jpg" alt="Hosting">
+			<h2>Hébergement</h2>
+			<p>Nous offrons des services d'hébergement fiables et sécurisés pour votre site web ou votre application.</p>
+		</div><td></tr></table>
+	</div>
+</body>
+{% endblock %}

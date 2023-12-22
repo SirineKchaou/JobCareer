@@ -1,0 +1,36 @@
+{% extends 'index.html.twig' %}
+
+{% block title %}Hello ContactController!{% endblock %}
+
+{% block body %}
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+
+      <div class="container">
+
+        <form>
+          <div class="title">
+            <h4 >Personal Information</h4>
+          </div>
+          <div class="form-group">
+            <label for="nom">Votre Nom</label>
+            <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom" />
+          </div>
+          <div class="form-group">
+            <label for="email">Votre email</label>
+            <input type="email" class="form-control" id="email" placeholder="Entrez votre email" />
+          </div>
+          <div class="form-group">
+            <label for="file">Telecharger votre CV</label>
+            <input type="file" class="form-control" id="file" />
+          </div>
+
+          <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
+      </div>
+    </div>
+{% endblock %}

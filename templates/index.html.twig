@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+    {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('app') }}
+    {% endblock %}
+
+    {% block javascripts %}
+        {{ encore_entry_script_tags('app') }}
+    {% endblock %}
+    <link rel="stylesheet" href="{{ asset('css/Home.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/carousel.css') }}">
+
+    <link rel="stylesheet" href="{{asset('css/Footer.css')}}">
+    <link rel="stylesheet" href="{{asset('css/nav.css')}}">
+    <link rel="stylesheet" href="{{asset('css/Contact.css')}}">
+    <link rel="stylesheet" href="{{asset('css/Contact2.css')}}">
+    <link rel="stylesheet" href="{{asset('css/About.css')}}">
+    <link rel="stylesheet" href="{{asset('css/Service.css')}}">
+
+</head>
+<body>
+
+{% block header %}
+    <div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><img src="{{ asset('image/logo2.png') }}" alt="Logo" width=60px /></li>
+                <li><a href="{{path('app_home')}}">home</a></li>
+                <li><a href="{{path('app_about')}}">About</a></li>
+                <li><a href="{{path('app_service')}}">Services</a></li>
+
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </div>
+
+{% endblock %}
+
+{% block body %}
+
+{% endblock %}
+
+{% block footer %}
+
+    <div>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"></link>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"></link>
+        <div class="footer-dark">
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>Services</h3>
+                            <ul>
+                                <li><a href="#">Recherche d'emplois</a></li>
+                                <li><a href="#">Postuler un emplois</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3 item">
+                            <h3>About</h3>
+                            <ul>
+                                <li><a href="#">Company</a></li>
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Careers</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 item text">
+                            <h3>Company Name</h3>
+                            <p>Je ne trouve pas l'information sur le 1er site d'offre d'emploi utilisé en Tunisie comme point de contact entre les candidats et les recruteurs.</p>
+                        </div>
+                        <div class="col item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                    </div>
+                    <p class="copyright">Company Name dsi23</p>
+                </div>
+            </footer>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+    </div>
+{% endblock %}
+
+</body>
+</html>
