@@ -1,5 +1,5 @@
 # JobCareer
-Une plateforme qui permet aux utilisateurs de prendre un rendez-vous chez un médecin en ligne.
+Un site de e-recrutement qui est dédiée à la gestion et à la facilitation du processus de recrutement pour les entreprises et les candidats.
 
 # Installation
 [Téléchargez Composer](https://getcomposer.org/) et utilisez le binaire composer installé sur votre ordinateur pour exécuter ces commandes :
@@ -8,7 +8,7 @@ Une plateforme qui permet aux utilisateurs de prendre un rendez-vous chez un mé
 $ composer create-project symfony/symfony-demo my_project
 
 // ...ou vous pouvez cloner le référentiel de code et installer ses dépendances
-$ git clone https://github.com/SirineKchaou/Doccure.git my_project
+$ git clone https://github.com/SirineKchaou/JobCareer.git my_project
 $ cd my_project/
 $ composer install
 ```
